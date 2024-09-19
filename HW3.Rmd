@@ -5,6 +5,7 @@ date: "2024-09-16"
 output: html_document
 ---
 
+#Graph 1
 ```{r}
 library(ggplot2)
 library(dplyr)  # For data manipulation
@@ -33,6 +34,7 @@ ggplot(data = Household_Pulse_data, aes(x = INCOME, y = Percentage, fill = INCOM
 
 ```
 
+#Graph 2
 ```{r}
 library(dplyr)
 library(tidyr)
@@ -64,6 +66,8 @@ axis.text.x = element_text(angle = 90, hjust = 1)
 #There are also more "N/A" entries for individuals with high school diplomas and some college degrees.
 #This may be because some individuals did not provide their vaccination status or because some participants chose not to answer the vaccination status question.
 ```
+
+#Graph 3
 ```{r}
 load("/Users/ari3/Desktop/R_Studio/EcoB2000_Lecture1/Household_Pulse_data_ph4c2.RData")
 library(dplyr)
@@ -117,6 +121,7 @@ ggplot(Mental_2.5, aes(x = as.factor(Level), fill = Mental_Health_Factor)) +
 #vaccination appears to be associated with reduced mental health distress during the pandemic.
 ```
 
+#Graph 4
 ```{r}
 # Load your dataset
 # load("/Users/jaydenkim/Desktop/Econometrics/Household_Pulse_data_ph4c2.RData")
@@ -170,6 +175,7 @@ print(p_bar_educ_vax)
 # Overall, the data suggests that both higher education and employment are strong factors in increased vaccination rates.
 ```
 
+#Graph 5
 ```{r}
 load("/Users/ari3/Desktop/R_Studio/EcoB2000_Lecture1/Household_Pulse_data_ph4c2.RData")
 library(tidyverse)
